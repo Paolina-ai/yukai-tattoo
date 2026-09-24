@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" role="img" aria-labelledby="t">
+  <title id="t">Yukaï Tattoo</title>
+  <g fill="none" stroke="#A4161A" stroke-width="2.4" stroke-linejoin="miter">
+    <!-- cadre haut (motif fret) -->
+    <path d="M42 50 V14 H56 V20 H64 V14 H78 V50"/>
+    <path d="M47 50 V26 H52 V19"/>
+    <path d="M73 50 V26 H68 V19"/>
+    <rect x="45" y="17" width="7" height="6"/>
+    <rect x="68" y="17" width="7" height="6"/>
+    <!-- montants -->
+    <path d="M42 50 V110 M78 50 V110"/>
+    <!-- cadre bas (miroir) -->
+    <path d="M42 110 V146 H56 V140 H64 V146 H78 V110"/>
+    <path d="M47 110 V134 H52 V141"/>
+    <path d="M73 110 V134 H68 V141"/>
+    <rect x="45" y="137" width="7" height="6"/>
+    <rect x="68" y="137" width="7" height="6"/>
+  </g>
+  <g fill="#A4161A">
+    <!-- cornes / branches du Y -->
+    <path d="M23 57 C38 47 55 53 61.3 90 L58.7 90 C54 69 41 61.5 23 63 Z"/>
+    <path d="M97 57 C82 47 65 53 58.7 90 L61.3 90 C66 69 79 61.5 97 63 Z"/>
+    <!-- jambage -->
+    <path d="M58.4 80 H61.6 L60.5 128 H59.5 Z"/>
+    <!-- yeux -->
+    <path d="M52 44 c-3 2 -3.5 6 -0.5 8 c-0.8 -2.4 0 -5 2.2 -6.4 Z"/>
+    <path d="M68 44 c3 2 3.5 6 0.5 8 c0.8 -2.4 0 -5 -2.2 -6.4 Z"/>
+  </g>
+</svg>
