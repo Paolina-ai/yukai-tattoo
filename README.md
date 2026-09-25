@@ -14,6 +14,13 @@ puis ouvrir http://localhost:8765
 
 - V1 « carnet d'encre » (sobre, clair) : `index.html`, `css/`, `js/`
 - V2 « encre vive » (sombre, animée : GSAP + ScrollTrigger + Lenis) : `v2/`, partage le dossier `img/`
+- V3 « sumi & washi » (entre-deux, optimisée) : `v3/`
+  - polices auto-hébergées dans `v3/fonts/` (sous-ensemble latin) ; **Caveat est réduite aux seuls caractères utilisés** :
+    si on change un texte manuscrit (« aka. Paul », « Tu gères ! », la note des dessins, la signature), il faut régénérer `caveat-700.woff2`
+  - GSAP / ScrollTrigger / SplitText / Lenis auto-hébergés dans `v3/vendor/` (aucun appel tiers au chargement)
+  - images responsives : variantes `-480.webp` dans `img/`
+  - carte Google chargée seulement au clic
+  - Lighthouse (local, mobile et desktop) : accessibilité 100, bonnes pratiques 100 ; SEO 63 uniquement à cause du `noindex` de prévisualisation
 
 ## Structure
 
