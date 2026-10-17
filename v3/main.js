@@ -236,7 +236,7 @@ function initScroll() {
   await runIntro();
   if (reduced) return;
   await (document.fonts?.ready ?? Promise.resolve()); // la police du titre est préchargée : attente quasi nulle
-  heroIntro();
+  if (!mobile) heroIntro(); // sur mobile, le premier écran s'affiche tel quel, sans attendre d'animation
   await loadLenis();
   initScroll();
 })();
