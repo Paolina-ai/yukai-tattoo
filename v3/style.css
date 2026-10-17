@@ -198,9 +198,10 @@ button { font: inherit; color: inherit; }
   color: var(--washi); mix-blend-mode: difference; white-space: nowrap;
 }
 .hero-aka { position: relative; z-index: 3; display: inline-block; font-family: var(--f-hand); font-weight: 700; font-size: 2.1rem; color: var(--shu-light); margin: 6px 0 22px; transform: rotate(-4deg); transform-origin: left; }
-.hero-bottom { position: relative; z-index: 3; max-width: min(42vw, 520px); }
-.hero-lead { color: var(--haze); font-size: 1.08rem; margin-bottom: 26px; }
-.hero-rating { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-size: .92rem; color: var(--haze); text-decoration: none; }
+.hero-bottom { position: relative; z-index: 3; max-width: min(50vw, 700px); }
+.hero-bottom .actions { align-items: center; }
+.hero-lead { color: var(--haze); font-size: 1.08rem; margin-bottom: 26px; max-width: 520px; }
+.hero-rating { display: inline-flex; align-items: center; gap: 6px; margin-left: 8px; font-size: .92rem; color: var(--haze); text-decoration: none; }
 .hero-rating span { color: var(--shu-light); letter-spacing: .1em; }
 .hero-rating b { color: var(--washi); }
 .hero-rating:hover { color: var(--washi); }
@@ -460,6 +461,7 @@ address { font-style: normal; font-size: 1.1rem; margin-bottom: 8px; }
   .giant { position: relative; left: -.03em; bottom: auto; display: block; font-size: 23.5vw; margin: -.52em 0 14px; }
   .hero-peony { width: 160vw; left: -40vw; top: -4vh; }
   .hero-bottom { padding-bottom: 60px; }
+  .hero-rating { margin: 6px 0 0; flex-basis: 100%; }
 
   .work-head { flex-direction: column; align-items: flex-start; gap: 18px; }
   .work-grid { grid-template-columns: 1fr 1fr; gap: 22px 12px; }
