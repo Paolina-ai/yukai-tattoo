@@ -36,7 +36,22 @@ addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) set
 /* ---------- Filtres de la galerie ---------- */
 
 const filters = $$('.filter');
-const items = $$('.work-track li[data-tags]');
+const grid = $('.work-grid');
+const items = $$('li[data-tags]', grid);
+const moreBtn = $('[data-more]');
+const reveal = (els) => {
+  if (hasGsap && !reduced) gsap.fromTo(els, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .5, stagger: .04, ease: 'power3.out' });
+};
+
+// « Voir plus » : 8 pièces d'abord, la suite au clic
+moreBtn.addEventListener('click', () => {
+  grid.classList.remove('is-collapsed');
+  moreBtn.setAttribute('aria-expanded', 'true');
+  moreBtn.hidden = true;
+  reveal(items.slice(8));
+  if (hasGsap) ScrollTrigger.refresh();
+});
+
 filters.forEach((btn) => {
   btn.addEventListener('click', () => {
     const f = btn.dataset.filter;
@@ -45,10 +60,11 @@ filters.forEach((btn) => {
       b.setAttribute('aria-pressed', b === btn);
     });
     items.forEach((li) => { li.hidden = f !== 'all' && !li.dataset.tags.split(' ').includes(f); });
-    if (hasGsap) {
-      ScrollTrigger.refresh();
-      if (!reduced) gsap.fromTo(items.filter((li) => !li.hidden), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .5, stagger: .04, ease: 'power3.out' });
-    }
+    // un filtre affiche toutes ses pièces ; « Tout » revient à la sélection courte (sauf si déjà dépliée)
+    if (f !== 'all') { grid.classList.remove('is-collapsed'); moreBtn.hidden = true; }
+    else if (moreBtn.getAttribute('aria-expanded') !== 'true') { grid.classList.add('is-collapsed'); moreBtn.hidden = false; }
+    reveal(items.filter((li) => !li.hidden));
+    if (hasGsap) ScrollTrigger.refresh();
   });
 });
 
@@ -174,24 +190,16 @@ function initScroll() {
 
   gsap.to('.hero-photo img', { yPercent: 10, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
 
-  const mm = gsap.matchMedia();
-  mm.add('(min-width: 761px)', () => {
-    // Galerie : défilement horizontal épinglé
-    const track = $('.work-track');
-    const distance = () => Math.max(0, track.scrollWidth - innerWidth);
-    gsap.to(track, {
-      x: () => -distance(), ease: 'none',
-      scrollTrigger: {
-        trigger: '.work-pin', start: 'top top', end: () => '+=' + distance(),
-        pin: true, scrub: 1, invalidateOnRefresh: true,
-        onUpdate: (self) => gsap.set('.work-progress span', { scaleX: self.progress }),
-      },
-    });
+  // Travail : les pièces apparaissent par rangées
+  ScrollTrigger.batch('.work-grid li', {
+    start: 'top 90%', once: true,
+    onEnter: (els) => gsap.from(els, { opacity: 0, y: 40, duration: .8, stagger: .08, ease: 'power3.out' }),
+  });
 
-    // Dessins : légère parallaxe des colonnes
-    $$('.drawings .col[data-speed]').forEach((col) => {
-      gsap.to(col, { yPercent: -col.dataset.speed, ease: 'none', scrollTrigger: { trigger: '.drawings', start: 'top bottom', end: 'bottom top', scrub: true } });
-    });
+  // Dessins : les tuiles de la mosaïque se dévoilent
+  gsap.from('.bento > *:not(.b-text)', {
+    clipPath: 'inset(100% 0% 0% 0% round 14px)', duration: 1.1, ease: 'power4.inOut', stagger: .07,
+    scrollTrigger: { trigger: '.bento', start: 'top 75%', once: true },
   });
 
   // Flashs : les planches se posent sur la table (une fois)

@@ -22,7 +22,7 @@
   <link rel="preload" href="fonts/shippori-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/zenkaku-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="../img/paul-yukai-tatoueur-reignac.webp" imagesrcset="../img/paul-yukai-tatoueur-reignac-480.webp 480w, ../img/paul-yukai-tatoueur-reignac.webp 1100w" imagesizes="(max-width: 760px) 100vw, 45vh" fetchpriority="high">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=6">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
 
   <script type="application/ld+json">
@@ -151,6 +151,7 @@
         <a class="btn" href="https://ig.me/m/yukai.tattoo" target="_blank" rel="noopener">M'écrire sur Instagram</a>
         <a class="btn btn-line" href="tel:+33626302228">06 26 30 22 28</a>
       </div>
+      <a class="hero-rating" href="https://www.google.com/maps/search/?api=1&amp;query=Label+Encre+Studio+Tattoo+Reignac-sur-Indre" target="_blank" rel="noopener"><span aria-hidden="true">★★★★★</span> <b>5,0</b> sur Google · 8 avis</a>
     </div>
   </section>
 
@@ -165,7 +166,12 @@
   <!-- INTRO + STYLES -->
   <section class="intro-sec paper" aria-labelledby="styles-title">
     <div class="wrap intro-grid">
-      <p class="statement">Chaque tattoo commence par ton histoire. Je la dessine à la main, je l'ajuste avec toi, puis je l'encre, avec le Japon en fil rouge&nbsp;: ses sabres, ses fleurs, ses kanji.</p>
+      <div class="intro-text">
+        <p class="kicker">Mon approche</p>
+        <p class="statement">Chaque tattoo commence par <em>ton histoire</em>.</p>
+        <p class="intro-body">Je la dessine à la main, je l'ajuste avec toi, puis je l'encre. Avec le Japon en fil rouge&nbsp;: ses sabres, ses fleurs, ses kanji.</p>
+        <a class="link" href="#rdv">Me raconter ton projet →</a>
+      </div>
       <div>
         <h2 id="styles-title" class="sr-only">Styles de tatouage</h2>
         <dl class="styles">
@@ -180,7 +186,7 @@
 
   <!-- TRAVAIL -->
   <section id="travail" class="work ink">
-    <div class="work-pin">
+    <div class="work-inner">
       <div class="work-head wrap">
         <h2 class="h2" data-split>Le travail</h2>
         <div class="work-side">
@@ -196,51 +202,54 @@
         </div>
       </div>
 
-      <ul class="work-track">
-        <li data-tags="neotrad japon floral"><button class="card" aria-label="Agrandir : katana et higanbana"><img src="../img/tatouage-katana-higanbana.webp" srcset="../img/tatouage-katana-higanbana-480.webp 480w, ../img/tatouage-katana-higanbana.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1124" loading="lazy" alt="Tatouage néo-traditionnel d'un katana entouré de lys araignée rouges sur l'avant-bras"></button><p><b>Katana et higanbana</b><span>Néo-trad, Japon</span></p></li>
-        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : crâne de dragon"><img src="../img/tatouage-crane-dragon.webp" srcset="../img/tatouage-crane-dragon-480.webp 480w, ../img/tatouage-crane-dragon.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage d'un crâne de dragon en noir sur les côtes"></button><p><b>Crâne de dragon</b><span>Néo-trad</span></p></li>
-        <li data-tags="japon floral"><button class="card" aria-label="Agrandir : higanbana"><img src="../img/tatouage-higanbana-rouge.webp" srcset="../img/tatouage-higanbana-rouge-480.webp 480w, ../img/tatouage-higanbana-rouge.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage de lys araignée rouges (higanbana) sur l'avant-bras"></button><p><b>Higanbana</b><span>Floral, Japon</span></p></li>
-        <li data-tags="neotrad floral"><button class="card" aria-label="Agrandir : Bouddha et lotus"><img src="../img/tatouage-bouddha-lotus.webp" srcset="../img/tatouage-bouddha-lotus-480.webp 480w, ../img/tatouage-bouddha-lotus.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage d'un Bouddha et d'une fleur de lotus sur l'avant-bras"></button><p><b>Bouddha et lotus</b><span>Néo-trad, Floral</span></p></li>
-        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : sagittaire"><img src="../img/tatouage-sagittaire.webp" srcset="../img/tatouage-sagittaire-480.webp 480w, ../img/tatouage-sagittaire.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage d'un sagittaire, archer mi-homme mi-cheval, sur l'avant-bras"></button><p><b>Sagittaire</b><span>Néo-trad</span></p></li>
-        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : loup et feuillages"><img src="../img/tatouage-loup-floral.webp" srcset="../img/tatouage-loup-floral-480.webp 480w, ../img/tatouage-loup-floral.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage d'un loup entouré de feuillages et d'un soleil sur le mollet"></button><p><b>Loup et feuillages</b><span>Floral, Fineline</span></p></li>
-        <li data-tags="ornemental fineline"><button class="card" aria-label="Agrandir : croissant ornemental"><img src="../img/tatouage-ornemental-lune.webp" srcset="../img/tatouage-ornemental-lune-480.webp 480w, ../img/tatouage-ornemental-lune.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage ornemental avec croissant de lune sur le poignet"></button><p><b>Croissant ornemental</b><span>Ornemental</span></p></li>
-        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : Dragon Ball"><img src="../img/tatouage-dragon-ball.webp" srcset="../img/tatouage-dragon-ball-480.webp 480w, ../img/tatouage-dragon-ball.webp 679w" sizes="(max-width: 760px) 72vw, 22vw" width="679" height="849" loading="lazy" alt="Tatouage réaliste d'une Dragon Ball posée sur des nuages"></button><p><b>Dragon Ball</b><span>Black and grey</span></p></li>
-        <li data-tags="floral"><button class="card" aria-label="Agrandir : papillon bleu"><img src="../img/tatouage-papillon-floral.webp" srcset="../img/tatouage-papillon-floral-480.webp 480w, ../img/tatouage-papillon-floral.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage d'un papillon bleu et de fleurs sur l'omoplate"></button><p><b>Papillon bleu</b><span>Floral</span></p></li>
-        <li data-tags="neotrad ornemental"><button class="card" aria-label="Agrandir : l'œil"><img src="../img/tatouage-main-oeil.webp" srcset="../img/tatouage-main-oeil-480.webp 480w, ../img/tatouage-main-oeil.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage d'une figure tenant un œil, avec rayons, sur l'avant-bras"></button><p><b>L'œil</b><span>Néo-trad, Ornemental</span></p></li>
-        <li data-tags="ornemental"><button class="card" aria-label="Agrandir : clé ornementale"><img src="../img/tatouage-cle-ornementale.webp" srcset="../img/tatouage-cle-ornementale-480.webp 480w, ../img/tatouage-cle-ornementale.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage d'une clé ornementale sur le mollet"></button><p><b>Clé ornementale</b><span>Ornemental</span></p></li>
-        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : lys"><img src="../img/tatouage-lys-fineline.webp" srcset="../img/tatouage-lys-fineline-480.webp 480w, ../img/tatouage-lys-fineline.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage fineline d'un lys sur le bras"></button><p><b>Lys</b><span>Fineline</span></p></li>
-        <li data-tags="neotrad japon"><button class="card" aria-label="Agrandir : sabre et ruban"><img src="../img/tatouage-sabre-ruban.webp" srcset="../img/tatouage-sabre-ruban-480.webp 480w, ../img/tatouage-sabre-ruban.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage d'un sabre japonais noué d'un ruban avec fleurs de cerisier"></button><p><b>Sabre et ruban</b><span>Néo-trad, Japon</span></p></li>
-        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : clochettes"><img src="../img/tatouage-fleurs-fineline.webp" srcset="../img/tatouage-fleurs-fineline-480.webp 480w, ../img/tatouage-fleurs-fineline.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage fineline de fleurs sur le poignet"></button><p><b>Clochettes</b><span>Fineline</span></p></li>
-        <li data-tags="ornemental fineline"><button class="card" aria-label="Agrandir : balance"><img src="../img/tatouage-balance.webp" srcset="../img/tatouage-balance-480.webp 480w, ../img/tatouage-balance.webp 720w" sizes="(max-width: 760px) 72vw, 22vw" width="720" height="900" loading="lazy" alt="Tatouage d'une balance de la justice sur l'avant-bras"></button><p><b>Balance</b><span>Fineline</span></p></li>
-        <li data-tags="japon fineline"><button class="card" aria-label="Agrandir : kanji"><img src="../img/tatouage-kanji-nuque.webp" srcset="../img/tatouage-kanji-nuque-480.webp 480w, ../img/tatouage-kanji-nuque.webp 900w" sizes="(max-width: 760px) 72vw, 22vw" width="900" height="1125" loading="lazy" alt="Tatouage de kanji sur la nuque"></button><p><b>Kanji</b><span>Japon, Fineline</span></p></li>
-        <li class="work-end"><a href="https://www.instagram.com/yukai.tattoo/" target="_blank" rel="noopener"><span>Voir tout sur Instagram</span><small>@yukai.tattoo</small></a></li>
+      <ul class="work-grid is-collapsed">
+        <li data-tags="neotrad japon floral"><button class="card" aria-label="Agrandir : katana et higanbana"><img src="../img/tatouage-katana-higanbana.webp" srcset="../img/tatouage-katana-higanbana-480.webp 480w, ../img/tatouage-katana-higanbana.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1124" loading="lazy" alt="Tatouage néo-traditionnel d'un katana entouré de lys araignée rouges sur l'avant-bras"></button><p><b>Katana et higanbana</b><span>Néo-trad, Japon</span></p></li>
+        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : crâne de dragon"><img src="../img/tatouage-crane-dragon.webp" srcset="../img/tatouage-crane-dragon-480.webp 480w, ../img/tatouage-crane-dragon.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage d'un crâne de dragon en noir sur les côtes"></button><p><b>Crâne de dragon</b><span>Néo-trad</span></p></li>
+        <li data-tags="japon floral"><button class="card" aria-label="Agrandir : higanbana"><img src="../img/tatouage-higanbana-rouge.webp" srcset="../img/tatouage-higanbana-rouge-480.webp 480w, ../img/tatouage-higanbana-rouge.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage de lys araignée rouges (higanbana) sur l'avant-bras"></button><p><b>Higanbana</b><span>Floral, Japon</span></p></li>
+        <li data-tags="neotrad floral"><button class="card" aria-label="Agrandir : Bouddha et lotus"><img src="../img/tatouage-bouddha-lotus.webp" srcset="../img/tatouage-bouddha-lotus-480.webp 480w, ../img/tatouage-bouddha-lotus.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage d'un Bouddha et d'une fleur de lotus sur l'avant-bras"></button><p><b>Bouddha et lotus</b><span>Néo-trad, Floral</span></p></li>
+        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : sagittaire"><img src="../img/tatouage-sagittaire.webp" srcset="../img/tatouage-sagittaire-480.webp 480w, ../img/tatouage-sagittaire.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage d'un sagittaire, archer mi-homme mi-cheval, sur l'avant-bras"></button><p><b>Sagittaire</b><span>Néo-trad</span></p></li>
+        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : loup et feuillages"><img src="../img/tatouage-loup-floral.webp" srcset="../img/tatouage-loup-floral-480.webp 480w, ../img/tatouage-loup-floral.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage d'un loup entouré de feuillages et d'un soleil sur le mollet"></button><p><b>Loup et feuillages</b><span>Floral, Fineline</span></p></li>
+        <li data-tags="ornemental fineline"><button class="card" aria-label="Agrandir : croissant ornemental"><img src="../img/tatouage-ornemental-lune.webp" srcset="../img/tatouage-ornemental-lune-480.webp 480w, ../img/tatouage-ornemental-lune.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage ornemental avec croissant de lune sur le poignet"></button><p><b>Croissant ornemental</b><span>Ornemental</span></p></li>
+        <li data-tags="neotrad"><button class="card" aria-label="Agrandir : Dragon Ball"><img src="../img/tatouage-dragon-ball.webp" srcset="../img/tatouage-dragon-ball-480.webp 480w, ../img/tatouage-dragon-ball.webp 679w" sizes="(max-width: 760px) 46vw, 24vw" width="679" height="849" loading="lazy" alt="Tatouage réaliste d'une Dragon Ball posée sur des nuages"></button><p><b>Dragon Ball</b><span>Black and grey</span></p></li>
+        <li data-tags="floral"><button class="card" aria-label="Agrandir : papillon bleu"><img src="../img/tatouage-papillon-floral.webp" srcset="../img/tatouage-papillon-floral-480.webp 480w, ../img/tatouage-papillon-floral.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage d'un papillon bleu et de fleurs sur l'omoplate"></button><p><b>Papillon bleu</b><span>Floral</span></p></li>
+        <li data-tags="neotrad ornemental"><button class="card" aria-label="Agrandir : l'œil"><img src="../img/tatouage-main-oeil.webp" srcset="../img/tatouage-main-oeil-480.webp 480w, ../img/tatouage-main-oeil.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage d'une figure tenant un œil, avec rayons, sur l'avant-bras"></button><p><b>L'œil</b><span>Néo-trad, Ornemental</span></p></li>
+        <li data-tags="ornemental"><button class="card" aria-label="Agrandir : clé ornementale"><img src="../img/tatouage-cle-ornementale.webp" srcset="../img/tatouage-cle-ornementale-480.webp 480w, ../img/tatouage-cle-ornementale.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage d'une clé ornementale sur le mollet"></button><p><b>Clé ornementale</b><span>Ornemental</span></p></li>
+        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : lys"><img src="../img/tatouage-lys-fineline.webp" srcset="../img/tatouage-lys-fineline-480.webp 480w, ../img/tatouage-lys-fineline.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage fineline d'un lys sur le bras"></button><p><b>Lys</b><span>Fineline</span></p></li>
+        <li data-tags="neotrad japon"><button class="card" aria-label="Agrandir : sabre et ruban"><img src="../img/tatouage-sabre-ruban.webp" srcset="../img/tatouage-sabre-ruban-480.webp 480w, ../img/tatouage-sabre-ruban.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage d'un sabre japonais noué d'un ruban avec fleurs de cerisier"></button><p><b>Sabre et ruban</b><span>Néo-trad, Japon</span></p></li>
+        <li data-tags="floral fineline"><button class="card" aria-label="Agrandir : clochettes"><img src="../img/tatouage-fleurs-fineline.webp" srcset="../img/tatouage-fleurs-fineline-480.webp 480w, ../img/tatouage-fleurs-fineline.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage fineline de fleurs sur le poignet"></button><p><b>Clochettes</b><span>Fineline</span></p></li>
+        <li data-tags="ornemental fineline"><button class="card" aria-label="Agrandir : balance"><img src="../img/tatouage-balance.webp" srcset="../img/tatouage-balance-480.webp 480w, ../img/tatouage-balance.webp 720w" sizes="(max-width: 760px) 46vw, 24vw" width="720" height="900" loading="lazy" alt="Tatouage d'une balance de la justice sur l'avant-bras"></button><p><b>Balance</b><span>Fineline</span></p></li>
+        <li data-tags="japon fineline"><button class="card" aria-label="Agrandir : kanji"><img src="../img/tatouage-kanji-nuque.webp" srcset="../img/tatouage-kanji-nuque-480.webp 480w, ../img/tatouage-kanji-nuque.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Tatouage de kanji sur la nuque"></button><p><b>Kanji</b><span>Japon, Fineline</span></p></li>
       </ul>
-      <div class="work-progress" aria-hidden="true"><span></span></div>
+      <div class="work-more wrap">
+        <button class="btn btn-line" type="button" data-more aria-expanded="false">Voir 8 pièces de plus</button>
+        <a class="link" href="https://www.instagram.com/yukai.tattoo/" target="_blank" rel="noopener">Tout le reste sur Instagram →</a>
+      </div>
     </div>
   </section>
 
-  <!-- DESSINS -->
+  <!-- DESSINS : mosaïque -->
   <section id="dessins" class="drawings paper">
-    <div class="drawings-cols">
-      <div class="col" data-speed="-10">
-        <button class="sketch" aria-label="Agrandir : projet de dos pivoine"><img src="../img/dessin-dos-pivoine.webp" srcset="../img/dessin-dos-pivoine-480.webp 480w, ../img/dessin-dos-pivoine.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="1125" loading="lazy" alt="Projet de tatouage de dos : pivoine ornementale, dessin de Yukaï"></button>
-        <button class="sketch" aria-label="Agrandir : créatures"><img src="../img/dessin-creatures.webp" srcset="../img/dessin-creatures-480.webp 480w, ../img/dessin-creatures.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="661" loading="lazy" alt="Croquis de petites créatures au crayon rouge"></button>
-      </div>
-      <div class="col col-text">
+    <div class="wrap bento">
+      <div class="bento-text b-text">
         <h2 class="h2" data-split>Tout part du papier</h2>
-        <p class="lead">Pas de copier-coller&nbsp;: je dessine chaque projet à la main à partir de ton idée, et on l'ajuste ensemble avant la séance.</p>
-        <p class="lead">Tu n'as pas encore d'idée précise&nbsp;? C'est justement le moment d'en parler.</p>
-        <p class="hand">Et entre deux projets, je dessine des flashs&nbsp;↓</p>
+        <p class="lead">Pas de copier-coller&nbsp;: je dessine chaque projet à la main à partir de ton idée, et on l'ajuste ensemble avant la séance. Tu n'as pas encore d'idée précise&nbsp;? C'est justement le moment d'en parler.</p>
       </div>
-      <div class="col" data-speed="12">
-        <button class="sketch" aria-label="Agrandir : yeux ornementaux"><img src="../img/dessin-yeux-ornementaux.webp" srcset="../img/dessin-yeux-ornementaux-480.webp 480w, ../img/dessin-yeux-ornementaux.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="1291" loading="lazy" alt="Planche de dessins d'yeux ornementaux au crayon"></button>
-        <button class="sketch" aria-label="Agrandir : lames florales"><img src="../img/dessin-lames.webp" srcset="../img/dessin-lames-480.webp 480w, ../img/dessin-lames.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="1124" loading="lazy" alt="Croquis de lames florales aux crayons de couleur"></button>
-      </div>
-      <div class="col col-extra" data-speed="-5">
-        <button class="sketch" aria-label="Agrandir : yeux en couleur"><img src="../img/dessin-yeux-couleur.webp" srcset="../img/dessin-yeux-couleur-480.webp 480w, ../img/dessin-yeux-couleur.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="1124" loading="lazy" alt="Croquis d'yeux néo-traditionnels aux crayons de couleur"></button>
-        <button class="sketch" aria-label="Agrandir : yeux et feuillages"><img src="../img/dessin-yeux-feuillage.webp" srcset="../img/dessin-yeux-feuillage-480.webp 480w, ../img/dessin-yeux-feuillage.webp 900w" sizes="(max-width: 1000px) 45vw, 20vw" width="900" height="1124" loading="lazy" alt="Croquis d'yeux entourés de feuillages"></button>
-      </div>
+      <figure class="bento-img b-piv"><button class="sketch" aria-label="Agrandir : projet de dos pivoine"><img src="../img/dessin-dos-pivoine.webp" srcset="../img/dessin-dos-pivoine-480.webp 480w, ../img/dessin-dos-pivoine.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1125" loading="lazy" alt="Projet de tatouage de dos : pivoine ornementale, dessin de Yukaï"></button></figure>
+      <figure class="bento-img b-orn"><button class="sketch" aria-label="Agrandir : yeux ornementaux"><img src="../img/dessin-yeux-ornementaux.webp" srcset="../img/dessin-yeux-ornementaux-480.webp 480w, ../img/dessin-yeux-ornementaux.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1291" loading="lazy" alt="Planche de dessins d'yeux ornementaux au crayon"></button></figure>
+      <blockquote class="bento-quote b-quote">
+        <p>«&nbsp;C'est aussi un vrai dessinateur (pas juste une personne qui imprime et qui recopie des lignes).&nbsp;»</p>
+        <cite>Ludovic B., avis Google</cite>
+      </blockquote>
+      <figure class="bento-img b-crea"><button class="sketch" aria-label="Agrandir : créatures"><img src="../img/dessin-creatures.webp" srcset="../img/dessin-creatures-480.webp 480w, ../img/dessin-creatures.webp 900w" sizes="(max-width: 760px) 92vw, 24vw" width="900" height="661" loading="lazy" alt="Croquis de petites créatures au crayon rouge"></button></figure>
+      <figure class="bento-img b-lam"><button class="sketch" aria-label="Agrandir : lames florales"><img src="../img/dessin-lames.webp" srcset="../img/dessin-lames-480.webp 480w, ../img/dessin-lames.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1124" loading="lazy" alt="Croquis de lames florales aux crayons de couleur"></button></figure>
+      <figure class="bento-img b-coul"><button class="sketch" aria-label="Agrandir : yeux en couleur"><img src="../img/dessin-yeux-couleur.webp" srcset="../img/dessin-yeux-couleur-480.webp 480w, ../img/dessin-yeux-couleur.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1124" loading="lazy" alt="Croquis d'yeux néo-traditionnels aux crayons de couleur"></button></figure>
+      <figure class="bento-img b-feu"><button class="sketch" aria-label="Agrandir : yeux et feuillages"><img src="../img/dessin-yeux-feuillage.webp" srcset="../img/dessin-yeux-feuillage-480.webp 480w, ../img/dessin-yeux-feuillage.webp 900w" sizes="(max-width: 760px) 46vw, 24vw" width="900" height="1124" loading="lazy" alt="Croquis d'yeux entourés de feuillages"></button></figure>
+      <a class="bento-cta b-cta" href="#rdv">
+        <span>Et ton idée&nbsp;?</span>
+        <small>Raconte-la-moi, je la dessine →</small>
+      </a>
     </div>
+    <p class="hand drawings-hand">Et entre deux projets, je dessine des flashs&nbsp;↓</p>
   </section>
 
   <!-- FLASHS -->
@@ -290,14 +299,18 @@
         <p class="signature" aria-hidden="true">Yukaï</p>
 
         <div class="reviews">
-          <p class="reviews-score"><span aria-hidden="true">★★★★★</span> 5,0 sur Google</p>
+          <a class="reviews-score" href="https://www.google.com/maps/search/?api=1&amp;query=Label+Encre+Studio+Tattoo+Reignac-sur-Indre" target="_blank" rel="noopener"><span aria-hidden="true">★★★★★</span> 5,0 sur Google · 8 avis, tous 5 étoiles</a>
           <blockquote>
             <p>«&nbsp;Un tatoueur vraiment talentueux, professionnel et à l'écoute. Le résultat est largement à la hauteur de mes attentes.&nbsp;»</p>
             <cite>Thomas C.</cite>
           </blockquote>
           <blockquote>
-            <p>«&nbsp;Superbe déco, très bon dessinateur, je recommande à tout le monde.&nbsp;»</p>
-            <cite>Corentin D.</cite>
+            <p>«&nbsp;Les tatouages ont été dessinés directement sur moi pour adapter à ma morphologie.&nbsp;»</p>
+            <cite>Isabelle V.</cite>
+          </blockquote>
+          <blockquote>
+            <p>«&nbsp;Une expérience superbe, et un tatouage magnifique.&nbsp;»</p>
+            <cite>Lou</cite>
           </blockquote>
         </div>
       </div>
@@ -316,6 +329,10 @@
         <li><h3>Je dessine</h3><p>Ton dessin est fait sur mesure, et on l'ajuste ensemble avant de tatouer.</p></li>
         <li><h3>On tatoue</h3><p>Au salon Label Encre, à Reignac-sur-Indre. Tu repars avec les consignes de soins.</p></li>
       </ol>
+      <blockquote class="rdv-quote">
+        <p>«&nbsp;Premier tatouage pour moi avec un peu d'appréhension au niveau de la douleur, il m'a tout de suite rassuré et mis à l'aise.&nbsp;»</p>
+        <cite>Noémie P., avis Google</cite>
+      </blockquote>
       <div class="actions">
         <a class="btn btn-paper" href="https://ig.me/m/yukai.tattoo" target="_blank" rel="noopener">M'écrire sur Instagram</a>
         <a class="btn btn-line-paper" href="tel:+33626302228">Appeler le 06 26 30 22 28</a>
@@ -367,6 +384,10 @@
             <address>Label Encre Studio Tattoo<br>16 place du Bourg du Fau<br>37310 Reignac-sur-Indre</address>
             <p class="small">À environ 30 minutes de Tours, entre Cormery et Loches.</p>
           </div>
+          <blockquote class="salon-quote">
+            <p>«&nbsp;Accueil chaleureux, le p'tit café qui va bien avant de laisser Paul réaliser notre projet.&nbsp;»</p>
+            <cite>Ingrid B.</cite>
+          </blockquote>
           <div class="info-block">
             <h3>Horaires</h3>
             <table class="hours">
@@ -407,6 +428,10 @@
 </main>
 
 <footer class="site-footer ink">
+  <div class="wrap footer-cta">
+    <p>Ton prochain tattoo commence par un message.</p>
+    <a class="btn" href="https://ig.me/m/yukai.tattoo" target="_blank" rel="noopener">M'écrire sur Instagram</a>
+  </div>
   <div class="wrap footer-cols">
     <p><strong>Yukaï Tattoo</strong>, tatoueur au salon Label Encre<br>16 place du Bourg du Fau, 37310 Reignac-sur-Indre</p>
     <p><a href="tel:+33626302228">06 26 30 22 28</a><br><a href="https://www.instagram.com/yukai.tattoo/" target="_blank" rel="noopener">Instagram @yukai.tattoo</a></p>
@@ -428,6 +453,6 @@
 <script src="vendor/gsap.min.js" defer></script>
 <script src="vendor/ScrollTrigger.min.js" defer></script>
 <script src="vendor/SplitText.min.js" defer></script>
-<script src="main.js" defer></script>
+<script src="main.js?v=5" defer></script>
 </body>
 </html>
