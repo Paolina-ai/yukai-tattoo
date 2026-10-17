@@ -109,6 +109,8 @@ button { font: inherit; color: inherit; }
   animation: loader-fallback .01s 3.6s forwards;
 }
 .no-js .loader, .loader.is-done { display: none; }
+/* pas d'intro sur mobile : la photo et les boutons s'affichent tout de suite */
+@media (max-width: 760px) { .loader { display: none; } }
 .loader-logo { width: 84px; height: auto; overflow: visible; }
 .loader-word { font-family: var(--f-display); font-weight: 800; font-size: 1.1rem; letter-spacing: .6em; padding-left: .6em; margin: 0; color: var(--washi); }
 .loader-panel { position: absolute; inset: 0; background: var(--shu); transform: translateY(100%); }

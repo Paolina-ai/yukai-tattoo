@@ -4,6 +4,7 @@
 
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const desktopPointer = matchMedia('(pointer: fine) and (min-width: 761px)').matches;
+const mobile = matchMedia('(max-width: 760px)').matches;
 const hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
 
 const $ = (s, c = document) => c.querySelector(s);
@@ -103,7 +104,7 @@ try { seen = sessionStorage.getItem('yk-intro') === '1'; } catch (e) { /* stocka
 
 function runIntro() {
   return new Promise((resolve) => {
-    if (!hasGsap || reduced || seen) {
+    if (!hasGsap || reduced || seen || mobile) {
       loader.classList.add('is-done');
       return resolve();
     }
@@ -130,8 +131,9 @@ function heroIntro() {
     const split = SplitText.create('.giant', { type: 'chars', mask: 'chars', aria: 'none' });
     tl.from(split.chars, { yPercent: 110, duration: 1.15, ease: 'power4.out', stagger: .06 }, 0);
   }
-  tl.from('.hero-photo', { clipPath: 'inset(100% 0% 0% 0%)', duration: 1.3, ease: 'power4.inOut' }, 0)
-    .from('.hero-photo img', { scale: 1.4, duration: 1.7, ease: 'power3.out' }, 0)
+  // sur mobile la photo est l'élément principal (LCP) : visible dès le départ, on l'anime sans la masquer
+  if (!mobile) tl.from('.hero-photo', { clipPath: 'inset(100% 0% 0% 0%)', duration: 1.3, ease: 'power4.inOut' }, 0);
+  tl.from('.hero-photo img', { scale: mobile ? 1.12 : 1.4, duration: 1.7, ease: 'power3.out' }, 0)
     .from(['.hero-sub', '.hero-aka', '.hero-lead', '.hero-bottom .actions'], { y: 26, opacity: 0, duration: .8, stagger: .07, ease: 'power3.out' }, .45)
     .from('.hero-peony', { opacity: 0, duration: 1.8, ease: 'power2.out' }, .2)
     .from('.site-header', { opacity: 0, duration: .7 }, .8);
